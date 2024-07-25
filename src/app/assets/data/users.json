@@ -1,0 +1,73 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "",
+            "senha": "123",
+            "tipoPerfil": "admin",
+            "nome": "",
+            "telefone": "",
+            "cpf": "",
+            "rg": "",
+            "naturalidade": "",
+            "cep": {
+                "numeroCep": "",
+                "cidade": "",
+                "estado": "",
+                "logradouro": "",
+                "numeroRua": 0,
+                "complemento": "",
+                "bairro": "",
+                "pontoRef": ""
+            },
+            "materias": [],
+            "turmas": []
+        },
+        {
+            "id": 2,
+            "email": "",
+            "senha": "123",
+            "tipoPerfil": "docente",
+            "nome": "",
+            "telefone": "",
+            "cpf": "",
+            "rg": "",
+            "naturalidade": "",
+            "cep": {
+                "numeroCep": "",
+                "cidade": "",
+                "estado": "",
+                "logradouro": "",
+                "numeroRua": 0,
+                "complemento": "",
+                "bairro": "",
+                "pontoRef": ""
+            },
+            "materias": [],
+            "turmas": []
+        },
+        {
+            "id": 3,
+            "email": "",
+            "senha": "123",
+            "tipoPerfil": "aluno",
+            "nome": "",
+            "telefone": "",
+            "cpf": "",
+            "rg": "",
+            "naturalidade": "",
+            "cep": {
+                "numeroCep": "",
+                "cidade": "",
+                "estado": "",
+                "logradouro": "",
+                "numeroRua": 0,
+                "complemento": "",
+                "bairro": "",
+                "pontoRef": ""
+            },
+            "materias": [],
+            "turmas": []
+        }
+    ]
+}
