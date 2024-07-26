@@ -68,6 +68,18 @@ input:focus {
     border-radius: 6px;
 }
 
+.input-invalid {
+    border: 2px solid #ac6c6c;
+}
+
+.input-invalid:hover {
+    border: 2px solid #ac6c6c;
+} 
+
+.input-invalid:focus {
+    border: 2px solid #ac6c6c;
+}
+
 .text-recover-password {
     font-size: 14px;
     text-decoration: underline;
