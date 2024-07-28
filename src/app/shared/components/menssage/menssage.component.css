@@ -1,0 +1,52 @@
+.alert {
+    width: 14%;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ac6c6c;
+    color: #ffffff;
+    border-radius: 4px;
+    position: absolute;
+    top: 18px;
+    right: 54px;
+    padding: 4px 3px;
+    animation: fadin 1s
+}
+
+.success {
+    width: 14%;
+    font-size: 14px;
+    text-align: center;
+    background-color: #6cac7a;
+    color: #ffffff;
+    border-radius: 4px;
+    position: absolute;
+    top: 18px;
+    right: 54px;
+    padding: 4px 3px;
+    animation: fadin 1s
+}
+
+@keyframes fadin {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 890px) {
+    .alert {
+        width: 20%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 440px) {
+    .alert {
+        width: 34%;
+        font-size: 12px;
+    }
+}

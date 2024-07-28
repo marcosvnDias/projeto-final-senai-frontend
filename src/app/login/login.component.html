@@ -1,4 +1,5 @@
 <main class="container-login">
+    <app-menssage *ngIf="aviso" status="alert" menssage="Funcionalidade em desenvolvimento"/>
     <form class="box-login">
         <div class="box-title-login">
             <p class="title-login">Login</p>
@@ -14,7 +15,7 @@
                 <input type="password" id="password" [class]="status.senha" [(ngModel)]="senha" 
                 (input)="tornarCampoNormal()"
                 [ngModelOptions]="{standalone: true}" required/>
-                <span class="text-recover-password">Esqueci a senha</span>
+                <span class="text-recover-password" (click)="mandarAviso()">Esqueci a senha</span>
             </div>
             <div class="box-button">
                 <button (click)="entrar()">Entrar</button>
