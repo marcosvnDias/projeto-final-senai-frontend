@@ -4,11 +4,13 @@ import { User } from '../shared/interfaces/user.interface';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MenssageComponent } from "../shared/components/menssage/menssage.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, MenssageComponent, CommonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -16,6 +18,7 @@ export class LoginComponent implements OnInit{
   usuarios!: User[]; 
   email = ""
   senha = ""
+  aviso = false
 
   status = {
     email: "",
@@ -77,6 +80,14 @@ export class LoginComponent implements OnInit{
     } else {
       return false;
     }
+  }
+
+  mandarAviso() {
+    this.aviso = true;
+
+    setTimeout(() => {
+      this.aviso = false
+    }, 3000)
   }
   
 }
