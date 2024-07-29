@@ -6,11 +6,12 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MenssageComponent } from "../shared/components/menssage/menssage.component";
 import { CommonModule } from '@angular/common';
+import { ToolbarComponent } from "../toolbar/toolbar.component";
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule, MenssageComponent, CommonModule],
+  imports: [FormsModule, MenssageComponent, CommonModule, ToolbarComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

@@ -18,4 +18,8 @@ export class UsersService {
   postUserSelected(user:User) {
     this.userSelected = user;
   }
+
+  getUserSelected() {
+    return this.userSelected;
+  }
 }
