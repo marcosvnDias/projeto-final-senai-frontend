@@ -1,0 +1,10 @@
+<div class="container-toolbar">
+    <div class="box-company-logo">
+        <p class="title-company">LABPCP</p>
+        <img src="../../assets/img/logo.png" alt="Logo da empresa (uma lupa)" class="img-company-logo">
+    </div>
+    <div class="box-user">
+        <p *ngIf="usuarioLogado">{{usuarioLogado!.nome}}</p>
+        <ng-icon name="hugeUserCircle02" class="icon-user"/>
+    </div>
+</div>
