@@ -15,7 +15,6 @@ import { CommonModule } from '@angular/common';
 })
 export class ToolbarComponent {
   usuarioLogado!: User;
-  texto = "gfvf"
 
   constructor(private usersService: UsersService) {
 
