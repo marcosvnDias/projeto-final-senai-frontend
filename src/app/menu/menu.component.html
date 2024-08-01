@@ -1,0 +1,34 @@
+<div [class]="status" (click)="mudarStatus()">
+    <div class="box-menu">
+        <p class="title-menu">Menu</p>
+        <ng-icon name="hugeMenu01" class="icon-menu"/>
+    </div>
+
+    <button class="button-menu start" [routerLink]="['/home']">Início</button>
+    <div class="box-register-menu" *ngIf="usuarioLogado.tipoPerfil == 'admin' || usuarioLogado.tipoPerfil == 'docente'">
+        <p class="subtitle-menu">Cadastros</p>
+        <button class="button-menu" *ngIf="usuarioLogado.tipoPerfil == 'admin'" 
+        [routerLink]="['/cadastro-aluno']">Cadastrar Aluno</button>
+
+        <button class="button-menu" *ngIf="usuarioLogado.tipoPerfil == 'admin'" 
+        [routerLink]="['/cadastro-docente']">Cadastrar Docente</button>
+
+        <button class="button-menu" *ngIf="usuarioLogado.tipoPerfil == 'admin' 
+        || usuarioLogado.tipoPerfil == 'docente'" [routerLink]="['/cadastro-turma']">Cadastrar Turma</button>
+
+        <button class="button-menu" *ngIf="usuarioLogado.tipoPerfil == 'admin' 
+        || usuarioLogado.tipoPerfil == 'docente'" [routerLink]="['/cadastro-avaliacao']">Cadastrar Avaliação</button>
+    </div>
+
+    <div class="box-register-menu" *ngIf="usuarioLogado.tipoPerfil == 'aluno' || usuarioLogado.tipoPerfil == 'admin'">
+        <p class="subtitle-menu">Detalhamento</p>
+        <button class="button-menu" *ngIf="usuarioLogado.tipoPerfil == 'aluno'" [routerLink]="['/notas']">Notas do Aluno</button>
+        <button class="button-menu" *ngIf="usuarioLogado.tipoPerfil == 'admin'" 
+        [routerLink]="['/listagem-docente']">Listagem dos Docentes</button>
+    </div>
+
+    <div class="box-register-menu">
+        <p class="subtitle-menu">Perfil</p>
+        <button class="button-menu" (click)="sair()">Sair</button>
+    </div>
+</div>

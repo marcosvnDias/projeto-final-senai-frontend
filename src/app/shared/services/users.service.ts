@@ -22,4 +22,9 @@ export class UsersService {
   getUserSelected() {
     return this.userSelected;
   }
+
+  removerUserSelected() {
+    let userEmpty!:User;
+    this.userSelected = userEmpty;
+  }
 }

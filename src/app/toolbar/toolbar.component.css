@@ -15,6 +15,7 @@
 .box-company-logo {
     display: flex;
     gap: 2px;
+    margin-left: 48px;
 }
 
 .title-company {
