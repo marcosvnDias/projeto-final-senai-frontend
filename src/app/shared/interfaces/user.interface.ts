@@ -7,10 +7,9 @@ export interface User {
     tipoPerfil: string,
     nome: string,
     telefone: string,
+    idade: number,
     cpf: string,
     rg: string,
     naturalidade: string,
-    cep: Cep,
-    materias: string[],
-    turmas: string[]
+    cep: Cep
 }

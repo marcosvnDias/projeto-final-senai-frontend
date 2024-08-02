@@ -33,8 +33,7 @@ export class LoginComponent implements OnInit{
     this.usersService.getAll().subscribe((data) => {
       this.usuarios = data;
     })
-
-    console.log(this.usuarios)
+    // console.log(this.usuarios)
   }
 
   entrar() {

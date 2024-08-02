@@ -1,0 +1,18 @@
+<app-toolbar/>
+<app-menu/>
+<div class="container-home">
+    <h2>Estatísticas:</h2>
+    <div class="box-statistic">
+        <app-card tipo="estatistica" [number]="usersAluno.length" title="Alunos"/>
+        <app-card tipo="estatistica" [number]="classes.length" title="Turmas"/>
+        <app-card tipo="estatistica" [number]="usersDocente.length" title="Docentes"/>
+    </div>
+
+    <p class="text-research-student">Pesquisar aluno:</p>
+    <input type="text" placeholder="Buscar..." class="input-research-student"/>
+
+    <div class="box-studant">
+        <app-card tipo="estudante" *ngFor="let aluno of usersAluno" 
+        [name]="aluno.nome" [age]="aluno.idade" [phone]="aluno.telefone" [profile]="userSelected.tipoPerfil"/>
+    </div>
+</div>
