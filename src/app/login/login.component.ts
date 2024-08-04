@@ -33,8 +33,7 @@ export class LoginComponent implements OnInit{
     this.usersService.getAll().subscribe((data) => {
       this.usuarios = data;
     })
-
-    console.log(this.usuarios)
+    // console.log(this.usuarios)
   }
 
   entrar() {
@@ -48,7 +47,7 @@ export class LoginComponent implements OnInit{
         alert("Dados incorretos");
       }
     }
-    console.log(this.usersService.userSelected);
+    // console.log(this.usersService.userSelected);
   }
 
   tornarCampoNormal() {

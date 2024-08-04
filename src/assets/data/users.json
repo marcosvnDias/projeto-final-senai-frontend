@@ -6,7 +6,8 @@
             "senha": "123",
             "tipoPerfil": "admin",
             "nome": "Daniel",
-            "telefone": "",
+            "telefone": "(00) 1234-5676",
+            "idade": 58,
             "cpf": "",
             "rg": "",
             "naturalidade": "",
@@ -19,9 +20,7 @@
                 "complemento": "",
                 "bairro": "",
                 "pontoRef": ""
-            },
-            "materias": [],
-            "turmas": []
+            }
         },
         {
             "id": 2,
@@ -29,7 +28,8 @@
             "senha": "123",
             "tipoPerfil": "docente",
             "nome": "José",
-            "telefone": "",
+            "telefone": "(00) 1234-5676",
+            "idade": 35,
             "cpf": "",
             "rg": "",
             "naturalidade": "",
@@ -42,17 +42,16 @@
                 "complemento": "",
                 "bairro": "",
                 "pontoRef": ""
-            },
-            "materias": [],
-            "turmas": []
+            }
         },
         {
             "id": 3,
-            "email": "lionel@gmail",
+            "email": "lionel@gmail.com",
             "senha": "123",
             "tipoPerfil": "aluno",
             "nome": "Lionel",
-            "telefone": "",
+            "telefone": "(00) 4563-4312",
+            "idade": 18,
             "cpf": "",
             "rg": "",
             "naturalidade": "",
@@ -65,9 +64,78 @@
                 "complemento": "",
                 "bairro": "",
                 "pontoRef": ""
+            }
+        },
+        {
+            "id": 4,
+            "email": "rafaela@gmail.com",
+            "senha": "123",
+            "tipoPerfil": "aluno",
+            "nome": "Rafaela",
+            "telefone": "(00) 5464-9785",
+            "idade": 18,
+            "cpf": "",
+            "rg": "",
+            "naturalidade": "",
+            "cep": {
+                "numeroCep": "",
+                "cidade": "",
+                "estado": "",
+                "logradouro": "",
+                "numeroRua": 0,
+                "complemento": "",
+                "bairro": "",
+                "pontoRef": ""
+            }
+        }
+    ],
+    "classes": [
+        {
+            "nome": "",
+            "alunos": {
+                "id": 3,
+                "email": "lionel@gmail",
+                "senha": "123",
+                "tipoPerfil": "aluno",
+                "nome": "Lionel",
+                "telefone": "(00) 1234-5676",
+                "idade": 18,
+                "cpf": "",
+                "rg": "",
+                "naturalidade": "",
+                "cep": {
+                    "numeroCep": "",
+                    "cidade": "",
+                    "estado": "",
+                    "logradouro": "",
+                    "numeroRua": 0,
+                    "complemento": "",
+                    "bairro": "",
+                    "pontoRef": ""
+                }
             },
-            "materias": [],
-            "turmas": []
+            "professor": {
+                "id": 2,
+                "email": "jose@gmail.com",
+                "senha": "123",
+                "tipoPerfil": "docente",
+                "nome": "José",
+                "telefone": "(00) 1234-5676",
+                "idade": 18,
+                "cpf": "",
+                "rg": "",
+                "naturalidade": "",
+                "cep": {
+                    "numeroCep": "",
+                    "cidade": "",
+                    "estado": "",
+                    "logradouro": "",
+                    "numeroRua": 0,
+                    "complemento": "",
+                    "bairro": "",
+                    "pontoRef": ""
+                }
+            }
         }
     ]
 }

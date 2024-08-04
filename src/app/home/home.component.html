@@ -1,0 +1,22 @@
+<app-toolbar/>
+<app-menu/>
+<div class="container-home">
+    <h2>Estatísticas:</h2>
+    <div class="box-statistic">
+        <app-card tipo="estatistica" [number]="usersAluno.length" title="Alunos"/>
+        <app-card tipo="estatistica" [number]="classes.length" title="Turmas"/>
+        <app-card tipo="estatistica" [number]="usersDocente.length" title="Docentes"/>
+    </div>
+
+    <p class="text-research-student">Pesquisar aluno:</p>
+    <input type="text" placeholder="Buscar..." class="input-research-student" [(ngModel)]="searchValue" (input)="filtrarAluno()"/>
+
+    <div class="box-studant" *ngIf="hasContent; else noContent">
+        <app-card tipo="estudante" *ngFor="let aluno of usersAlunoSearch" 
+        [name]="aluno.nome" [age]="aluno.idade" [phone]="aluno.telefone" [profile]="userSelected.tipoPerfil"/>
+    </div>
+
+    <ng-template #noContent>
+        <p>Não foi encontrado o estudante digitado...</p>
+    </ng-template>
+</div>
