@@ -102,6 +102,10 @@
         gap: 36px;
         width: 30vw;
     }
+
+    .input-research-student {
+        width: 66%;
+    }
 }
 
 @media (max-width: 450px) {

@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit{
         alert("Dados incorretos");
       }
     }
-    console.log(this.usersService.userSelected);
+    // console.log(this.usersService.userSelected);
   }
 
   tornarCampoNormal() {

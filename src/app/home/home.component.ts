@@ -6,11 +6,12 @@ import { UsersService } from '../shared/services/users.service';
 import { User } from '../shared/interfaces/user.interface';
 import { Class } from '../shared/interfaces/classes.interface';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ToolbarComponent, MenuComponent, CardComponent, CommonModule],
+  imports: [ToolbarComponent, MenuComponent, CardComponent, CommonModule, FormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -20,6 +21,9 @@ export class HomeComponent implements OnInit {
   classes:Class[] = [];
 
   userSelected!:User
+  searchValue: string = '';
+  usersAlunoSearch:User[] = [];
+  hasContent: boolean = true;
 
   constructor(private usersService: UsersService) {
 
@@ -37,8 +41,7 @@ export class HomeComponent implements OnInit {
             break;
         }
       });
-      // console.log(this.usersDocente);
-      // console.log(this.usersAluno);
+      this.usersAlunoSearch = this.usersAluno;
     })
 
     this.usersService.getAllClasses().subscribe((data) => {
@@ -47,7 +50,28 @@ export class HomeComponent implements OnInit {
     })
 
     this.userSelected = this.usersService.getUserSelected();
+  }
 
+  filtrarAluno() {
+    this.usersAlunoSearch = this.usersAluno;
+    let usersAlunoFilted:User[] = [];
+
+    this.usersAluno.forEach(aluno => {
+      if (aluno.nome.toLocaleLowerCase().indexOf(this.searchValue.toLocaleLowerCase()) > -1) {
+        usersAlunoFilted.push(aluno);
+      } else if (aluno.telefone.toLocaleLowerCase().indexOf(this.searchValue.toLocaleLowerCase()) > -1) {
+        usersAlunoFilted.push(aluno);
+      }
+    });
+
+    console.log(usersAlunoFilted);
+    if (usersAlunoFilted.length == 0) {
+      this.hasContent = false;
+      this.usersAlunoSearch = usersAlunoFilted;
+    } else {
+      this.hasContent = true;
+      this.usersAlunoSearch = usersAlunoFilted;
+    }
   }
 
 }
