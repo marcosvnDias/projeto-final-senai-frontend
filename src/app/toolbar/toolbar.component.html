@@ -5,7 +5,7 @@
         <img src="../../assets/img/logo.png" alt="Logo da empresa (uma lupa)" class="img-company-logo">
     </div>
     <div class="box-user">
-        <p *ngIf="usuarioLogado">{{usuarioLogado!.nome}}</p>
+        <p class="name-user" *ngIf="usuarioLogado">{{usuarioLogado!.nome.split(" ")[0]}}</p>
         <ng-icon name="hugeUserCircle02" class="icon-user"/>
     </div>
 </div>
