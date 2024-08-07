@@ -13,16 +13,6 @@
     color: #9284e8;
 }
 
-.box-statistic {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    gap: 102px;
-    padding: 0px 12px;
-}
-
 .text-research-docente {
     font-size: 18px;
     font-weight: 100;
@@ -103,4 +93,41 @@
 .box-users-list-docente:hover .title-action-list-docente {
     color: #ffffff;
     transition: 0.3s;
+}
+
+
+@media (max-width: 800px) {
+    .box-users-list-docente {
+        font-size: 12px;
+    }
+
+    .container-list-docente {
+        padding: 88px 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box-users-list-docente {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 530px) {
+    .container-list-docente {
+        padding: 88px 28px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container-list-docente {
+        padding: 88px 28px;
+    }
+
+    .box-docente {
+        padding: 0px 0px;
+    }
+
+    .box-users-list-docente {
+        font-size: 12px;
+    }
 }
