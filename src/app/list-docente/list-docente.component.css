@@ -1,0 +1,133 @@
+.container-list-docente {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background-color: #eaeaff;
+    padding: 88px 78px;
+}
+
+.title-list-docente {
+    font-size: 34px;
+    color: #9284e8;
+}
+
+.text-research-docente {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.input-research-docente {
+    height: 32px;
+    width: 36%;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: none;
+    outline: 2px solid #ffffff;
+    border-radius: 4px;
+    padding: 0px 12px;
+    transition: 0.5s;
+}
+
+.input-research-docente:hover {
+    outline: 2px solid #9284e8;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.input-research-docente:focus {
+    outline: 2px solid #9284e8;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.box-docente {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 12px;
+    padding: 0px 12px;
+    margin-top: 32px;
+}
+
+.box-caption-list-docente {
+    font-weight: 800;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 21px;
+}
+
+.box-users-list-docente {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaeaff;
+    color: #9696a8;
+    border: 2px #9284e8 solid;
+    border-radius: 4px;
+    padding: 10px 16px;
+    transition: 0.3s;
+}
+
+.box-users-list-docente:hover {
+    background-color: #9284e8;
+    color: #ffffff;
+    border: 2px #9284e8 solid;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.title-action-list-docente {
+    font-weight: 800;
+    text-decoration: underline;
+    color: #9284e8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box-users-list-docente:hover .title-action-list-docente {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 800px) {
+    .box-users-list-docente {
+        font-size: 12px;
+    }
+
+    .container-list-docente {
+        padding: 88px 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box-users-list-docente {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 530px) {
+    .container-list-docente {
+        padding: 88px 28px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container-list-docente {
+        padding: 88px 28px;
+    }
+
+    .box-docente {
+        padding: 0px 0px;
+    }
+
+    .box-users-list-docente {
+        font-size: 12px;
+    }
+}
