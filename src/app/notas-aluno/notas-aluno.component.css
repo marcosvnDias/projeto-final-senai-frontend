@@ -1,0 +1,143 @@
+.container-nota-aluno {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background-color: #eaeaff;
+    padding: 88px 78px;
+}
+
+.title-nota-aluno {
+    font-size: 30px;
+    color: #9284e8;
+}
+
+.text-nota-aluno {
+    font-size: 24px;
+    font-weight: 100;
+    color: #9696a8;
+}
+
+.box-info-nota-aluno {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #eaeaff;
+    color: #9696a8;
+    border: 2px #9284e8 solid;
+    border-radius: 4px;
+    padding: 10px 16px;
+    transition: 0.3s;
+}
+
+.text-info-nota-aluno {
+    font-size: 18px;
+    font-weight: 100;
+    color: #9696a8;
+}
+
+.text-content-nota-aluno {
+    color: #2c2c2c;
+}
+
+.box-nota-aluno {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 12px;
+    padding: 0px 12px;
+    margin-top: 32px;
+}
+
+.box-caption-nota-aluno {
+    font-weight: 800;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 21px;
+}
+
+.box-users-nota-aluno {
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaeaff;
+    color: #9696a8;
+    border: 2px #9284e8 solid;
+    border-radius: 4px;
+    padding: 10px 16px;
+    transition: 0.3s;
+}
+
+.box-users-nota-aluno:hover {
+    background-color: #9284e8;
+    color: #ffffff;
+    border: 2px #9284e8 solid;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.title-action-nota-aluno {
+    font-weight: 800;
+    text-decoration: underline;
+    color: #9284e8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box-users-nota-aluno:hover .title-action-nota-aluno {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 800px) {
+    .box-users-nota-aluno {
+        font-size: 12px;
+    }
+
+    .container-nota-aluno {
+        padding: 88px 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box-caption-nota-aluno {
+        font-size: 16px;
+    }
+
+    .box-users-nota-aluno {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 530px) {
+    .container-nota-aluno {
+        padding: 88px 28px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container-nota-aluno {
+        padding: 88px 28px;
+    }
+
+    .box-caption-nota-aluno {
+        font-size: 12px;
+    }
+
+    .box-nota-aluno {
+        padding: 0px 0px;
+    }
+
+    .box-users-nota-aluno {
+        font-size: 12px;
+    }
+}

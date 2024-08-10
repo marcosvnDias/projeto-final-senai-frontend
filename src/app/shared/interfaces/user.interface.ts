@@ -1,4 +1,5 @@
 import { Cep } from "./cep.interface";
+import { Nota } from "./nota.interface";
 
 export interface User {
     id: number,
@@ -11,5 +12,7 @@ export interface User {
     cpf: string,
     rg: string,
     naturalidade: string,
-    cep: Cep
+    genero: string
+    cep: Cep,
+    notas: Nota[]
 }
