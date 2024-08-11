@@ -22,7 +22,8 @@
 
     <div class="box-register-menu" *ngIf="usuarioLogado.tipoPerfil == 'aluno' || usuarioLogado.tipoPerfil == 'admin'">
         <p class="subtitle-menu">Detalhamento</p>
-        <button class="button-menu" *ngIf="usuarioLogado.tipoPerfil == 'aluno'" [routerLink]="['/notas']">Notas do Aluno</button>
+        <button class="button-menu" *ngIf="usuarioLogado.tipoPerfil == 'aluno'" 
+        [routerLink]="['/notas-aluno']">Notas do Aluno</button>
         <button class="button-menu" *ngIf="usuarioLogado.tipoPerfil == 'admin'" 
         [routerLink]="['/listagem-docente']">Listagem dos Docentes</button>
     </div>
