@@ -81,6 +81,16 @@
     color: #717079;
 }
 
+.matter {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+.date {
+    font-size: 18px;
+    color: #717079;
+}
+
 .button-card {
     height: 34px;
     width: 46%;
