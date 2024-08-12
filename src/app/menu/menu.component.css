@@ -9,9 +9,10 @@
     color: #ffff;
     box-shadow: 0px 0px 10px #575757af;
     padding: 6px 12px;
-    position: absolute;    
+    position: fixed;    
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 .hidden-menu {
@@ -24,7 +25,7 @@
     background-color: #9284e8;
     color: #ffff;
     padding: 6px 12px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     transform: translateX(-78%);
