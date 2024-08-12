@@ -8,6 +8,11 @@
     padding: 88px 78px;
 }
 
+.title-home {
+    font-size: 34px;
+    color: #9284e8;
+}
+
 .box-statistic {
     width: 100%;
     display: flex;

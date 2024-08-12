@@ -46,10 +46,10 @@ export class HomeComponent implements OnInit {
 
     this.usersService.getAllClasses().subscribe((data) => {
       this.classes = data;
-      // console.log(this.classes)
     })
-
+    
     this.userSelected = this.usersService.getUserSelected();
+    console.log(this.userSelected)
   }
 
   filtrarAluno() {

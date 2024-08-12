@@ -11,3 +11,15 @@
     <button class="button-card" *ngIf="profile == 'admin'">Ver mais</button>
     <button class="button-card" *ngIf="profile == 'docente'">Lançar nota</button>
 </div>
+
+<div class="card-studant" *ngIf="tipo == 'avaliacao'">
+    <ng-icon name="hugeFileValidation" class="icon-user-card"/>
+    <p class="text-name">{{ name }}</p>
+    <p class="matter">{{ matter }}</p>
+    <p class="date">{{ date }}</p>
+</div>
+
+<div class="card-studant" *ngIf="tipo == 'materia'">
+    <ng-icon name="hugeBook02" class="icon-user-card"/>
+    <p class="name">{{ matter }}</p>
+</div>
