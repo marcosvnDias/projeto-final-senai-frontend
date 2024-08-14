@@ -1,0 +1,158 @@
+.container-menu {
+    height: 100%;
+    width: 15%;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #9284e8;
+    color: #ffff;
+    box-shadow: 0px 0px 10px #575757af;
+    padding: 6px 12px;
+    position: fixed;    
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.hidden-menu {
+    height: 43px;
+    width: 15%;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #9284e8;
+    color: #ffff;
+    padding: 6px 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-78%);
+    overflow: hidden;
+}
+
+.box-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-menu {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffff;
+}
+
+.icon-menu {
+    font-size: 32px;
+    color: #ffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon-menu:active {
+    color: #413779;
+    transition: none;
+}
+
+.button-menu {
+    height: 36px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #ffff; 
+    color: #9284e8;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    text-align: start;
+    padding: 0px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-menu:hover {
+    color: #554a9c;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.button-menu:active {
+    color: #2a244e;
+    border-radius: 10px;
+    transition: none;
+}
+
+.box-register-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subtitle-menu {
+    padding-left: 8px;
+}
+
+
+@media (max-width: 1308px) {
+    .container-menu {
+        width: 25%;
+    }
+
+    .hidden-menu {
+        width: 20%;
+    }
+
+    .button-menu {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1051px) {
+
+    .hidden-menu {
+        width: 26%;
+    }
+}
+
+@media (max-width: 1051px) {
+
+    .hidden-menu {
+        width: 30%;
+    }
+}
+
+@media (max-width: 698px) {
+    .container-menu {
+        width: 42%;
+    }
+
+    .hidden-menu {
+        width: 40%;
+    }
+
+    .button-menu {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 528px) {
+    .hidden-menu {
+        width: 48%;
+    }
+
+}
+
+@media (max-width: 428px) {
+    .hidden-menu {
+        width: 58%;
+    }
+}
+
+@media (max-width: 328px) {
+    .hidden-menu {
+        width: 68%;
+    }
+}

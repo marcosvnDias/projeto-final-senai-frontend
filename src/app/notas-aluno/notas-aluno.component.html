@@ -1,0 +1,46 @@
+<app-toolbar/>
+<app-menu/>
+<div class="container-nota-aluno">
+    <h2 class="title-nota-aluno">Notas do Aluno</h2>
+    <p class="text-nota-aluno">Informações do Aluno</p>
+
+    <div class="box-info-nota-aluno">
+        <p class="text-info-nota-aluno">Nome: <span class="text-content-nota-aluno">{{userSelected.nome}}</span></p>
+        <p class="text-info-nota-aluno">Email: <span class="text-content-nota-aluno">{{userSelected.email}}</span></p>
+        <p class="text-info-nota-aluno">Gênero: <span class="text-content-nota-aluno">{{userSelected.genero}}</span></p>
+        <p class="text-info-nota-aluno">Telefone: <span class="text-content-nota-aluno">{{userSelected.telefone}}</span></p>
+        <p class="text-info-nota-aluno">CFP: <span class="text-content-nota-aluno">{{userSelected.cpf}}</span></p>
+    </div>
+
+    <p class="text-nota-aluno">Turma</p>
+    <div class="box-info-nota-aluno">
+        <p class="text-info-nota-aluno">Docente: 
+            <span class="text-content-nota-aluno">{{classeAluno.professor.nome}}</span>
+        </p>
+        <p class="text-info-nota-aluno">Nome da Turma: 
+            <span class="text-content-nota-aluno">{{classeAluno.nome}}</span>
+        </p>
+        <p class="text-info-nota-aluno">Horário: 
+            <span class="text-content-nota-aluno">{{classeAluno.horario}}</span>
+        </p>
+    </div>
+
+    <div class="box-nota-aluno">
+        <div class="box-caption-nota-aluno">
+            <!-- <p *ngFor="let docente of usersDocenteSearch"></p> -->
+            <p>Id</p>
+            <p>Nome Avaliação</p>
+            <p>Data</p>
+            <p>Matéria</p>
+            <p>Nota</p>
+        </div>
+        <div class="box-users-nota-aluno" *ngFor="let nota of notaAluno">
+            <p>{{nota.id}}</p>
+            <p>{{nota.nome}}</p>
+            <p>{{nota.data}}</p>
+            <p>{{nota.materia}}</p>
+            <p>{{nota.valor}}</p>
+        </div>
+
+    </div>
+</div>

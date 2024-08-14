@@ -1,0 +1,27 @@
+<main class="container-login">
+    <app-menssage *ngIf="aviso" status="alert" menssage="Funcionalidade em desenvolvimento"/>
+    <!-- <app-toolbar/> -->
+    <!-- <app-menu/> -->
+    <form class="box-login">
+        <div class="box-title-login">
+            <p class="title-login">Login</p>
+        </div>
+        <div class="box-items">
+            <div class="box-input">
+                <label for="email">Email</label>
+                <input type="text" id="email" [class]="status.email" [(ngModel)]="email" (input)="tornarCampoNormal()"
+                [ngModelOptions]="{standalone: true}" required/>
+            </div>
+            <div class="box-input">
+                <label for="password">Senha</label>
+                <input type="password" id="password" [class]="status.senha" [(ngModel)]="senha" 
+                (input)="tornarCampoNormal()"
+                [ngModelOptions]="{standalone: true}" required/>
+                <span class="text-recover-password" (click)="mandarAviso()">Esqueci a senha</span>
+            </div>
+            <div class="box-button">
+                <button (click)="entrar()">Entrar</button>
+            </div>
+        </div>
+    </form>
+</main>

@@ -1,0 +1,163 @@
+.container-login {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #dcd8f7; */
+    background-color: #9284e8;
+}
+
+.box-login {
+    height: 60vh;
+    width: 30%;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-title-login {
+    height: 82%;
+    display: flex;
+    align-items: center;
+}
+
+.title-login {
+    font-size: 48px;
+}
+
+.box-items {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.box-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 38px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input {
+    height: 36px;
+    font-size: 16px;
+    border: 2px solid #9284e8;
+    border-radius: 2px;
+    outline: none;
+    padding: 0px 8px;
+    transition: 0.3s;
+}
+
+input:hover {
+    border: 2px solid #756cac;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border: 2px solid #756cac;
+    border-radius: 6px;
+}
+
+.input-invalid {
+    border: 2px solid #ac6c6c;
+}
+
+.input-invalid:hover {
+    border: 2px solid #ac6c6c;
+} 
+
+.input-invalid:focus {
+    border: 2px solid #ac6c6c;
+}
+
+.text-recover-password {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #818181;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.box-button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 38px;
+    margin-top: 38px;
+}
+
+button {
+    height: 38px;
+    font-size: 16px;
+    background-color: #9284e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #877fb6;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:active {
+    background-color: #68638a;
+    border-radius: 8px;
+    transition: none;
+}
+
+/* @media (max-width: 1440px) {
+    .box-login {
+        height: 62vh;
+        width: 42%;
+    }
+
+} */
+
+@media (max-width: 1480px) {
+    .box-login {
+        height: 60vh;
+        width: 30%;
+    }
+}
+
+@media (max-width: 1180px) {
+    .box-login {
+        height: 60vh;
+        width: 40%;
+    }
+}
+
+@media (max-width: 680px) {
+    .box-login {
+        height: 60vh;
+        width: 54%;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-login {
+        height: 60vh;
+        width: 68%;
+    }
+}
+
+@media (max-width: 350px) {
+    .box-login {
+        height: 60vh;
+        width: 72%;
+    }
+}

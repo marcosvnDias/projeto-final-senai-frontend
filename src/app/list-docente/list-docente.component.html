@@ -1,0 +1,30 @@
+<app-toolbar/>
+<app-menu/>
+<div class="container-list-docente" *ngIf="userSelected.tipoPerfil == 'admin'">
+    <h2 class="title-list-docente">Listagem de Docentes</h2>
+
+    <p class="text-research-docente">Pesquisar docente:</p>
+    <input type="text" placeholder="Buscar..." class="input-research-docente" [(ngModel)]="searchValue" 
+    (input)="filtrarDocente()"/>
+
+    <div class="box-docente" *ngIf="hasContent; else noContent">
+        <div class="box-caption-list-docente">
+            <!-- <p *ngFor="let docente of usersDocenteSearch"></p> -->
+            <p>Id</p>
+            <p>Nome Completo</p>
+            <p>Telefone</p>
+            <p>Ação</p>
+        </div>
+        <div class="box-users-list-docente" *ngFor="let docente of usersDocenteSearch">
+            <p>{{docente.id}}</p>
+            <p>{{docente.nome}}</p>
+            <p>{{docente.telefone}}</p>
+            <p class="title-action-list-docente" [routerLink]="['detalhar-aluno']">Ver mais</p>
+        </div>
+
+    </div>
+
+    <ng-template #noContent>
+        <p>Não foi encontrado o estudante digitado...</p>
+    </ng-template>
+</div>

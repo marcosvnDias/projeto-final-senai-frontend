@@ -1,0 +1,147 @@
+.container-home {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background-color: #eaeaff;
+    padding: 88px 78px;
+}
+
+.title-home {
+    font-size: 34px;
+    color: #9284e8;
+}
+
+.box-statistic {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 102px;
+    padding: 0px 12px;
+}
+
+.text-research-student {
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.input-research-student {
+    height: 32px;
+    width: 36%;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: none;
+    outline: 2px solid #ffffff;
+    border-radius: 4px;
+    padding: 0px 12px;
+    transition: 0.5s;
+}
+
+.input-research-student:hover {
+    outline: 2px solid #9284e8;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.input-research-student:focus {
+    outline: 2px solid #9284e8;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.box-studant {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 102px;
+    padding: 0px 12px;
+    margin-top: 32px;
+}
+
+@media (max-width: 947px) {
+    .box-studant {
+        gap: 72px;
+    }
+
+    .box-statistic {
+        width: 26vw;
+    }
+}
+
+@media (max-width: 770px) {
+    .box-studant {
+        gap: 62px;
+    }
+
+    .box-statistic {
+        gap: 62px;
+        width: 26vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .box-studant {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .box-statistic {
+        gap: 48px;
+        width: 30vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .box-studant {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .box-statistic {
+        gap: 36px;
+        width: 30vw;
+    }
+
+    .input-research-student {
+        width: 66%;
+    }
+}
+
+@media (max-width: 450px) {
+    .container-home {
+        padding: 88px 28px;
+    }
+
+    .box-studant {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .box-statistic {
+        flex-wrap: wrap;
+        gap: 28px;
+        width: 30vw;
+    }
+}
+
+@media (max-width: 380px) {
+    .container-home {
+        padding: 88px 18px;
+    }
+
+    .box-studant {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .box-statistic {
+        flex-wrap: wrap;
+        gap: 28px;
+    }
+}

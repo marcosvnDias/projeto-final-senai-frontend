@@ -1,0 +1,48 @@
+<app-toolbar/>
+<app-menu/>
+<div class="container-home" *ngIf="userSelected.tipoPerfil != 'aluno'; else isNotAluno">
+    <h2>Estatísticas:</h2>
+    <div class="box-statistic">
+        <app-card tipo="estatistica" [number]="usersAluno.length" title="Alunos"/>
+        <app-card tipo="estatistica" [number]="classes.length" title="Turmas"/>
+        <app-card tipo="estatistica" [number]="usersDocente.length" title="Docentes"/>
+    </div>
+
+    <p class="text-research-student">Pesquisar aluno:</p>
+    <input type="text" placeholder="Buscar..." class="input-research-student" [(ngModel)]="searchValue" (input)="filtrarAluno()"/>
+
+    <div class="box-studant" *ngIf="hasContent; else noContent">
+        <app-card tipo="estudante" *ngFor="let aluno of usersAlunoSearch" 
+        [name]="aluno.nome" [age]="aluno.idade" [phone]="aluno.telefone" [profile]="userSelected.tipoPerfil"/>
+    </div>
+
+    <ng-template #noContent>
+        <p>Não foi encontrado o estudante digitado...</p>
+    </ng-template>
+</div>
+<ng-template #isNotAluno>
+    <div class="container-home">
+        <h2 class="title-home">Avaliações:</h2>
+        <div class="box-studant">
+            <app-card tipo="avaliacao" *ngFor="let nota of userSelected.notas" 
+            [name]="nota.nome" [matter]="nota.materia" [date]="nota.data"/>
+        </div>
+
+        <h2 class="title-home">Minhas Matérias:</h2>
+        <div class="box-studant">
+            <app-card tipo="materia" *ngFor="let nota of userSelected.notas" [matter]="nota.materia"/>
+        </div>
+
+        <h2 class="title-home">Cursos Extras:</h2>
+        <div class="box-studant">
+            <app-card tipo="materia" [matter]="'Arqueologia'"/>
+            <app-card tipo="materia" [matter]="'Filosofia'"/>
+            <app-card tipo="materia" [matter]="'Literatura'"/>
+        </div>
+    
+        <!-- <div class="box-studant" *ngIf="hasContent; else noContent">
+            <app-card tipo="estudante" *ngFor="let nota of userSelected.notas" 
+            [name]="nota.nome" [matter]="aluno.idade" [date]="aluno.telefone" [profile]="userSelected.tipoPerfil"/>
+        </div> -->
+    </div>
+</ng-template>
