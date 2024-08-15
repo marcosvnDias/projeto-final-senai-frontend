@@ -32,6 +32,11 @@ Para executar o projeto localmente, siga os passos abaixo:
    json-server src/assets/data/users.json
    ```
 
-4. **Acesse a aplicação:**
+4. **Coloque o seguinte em outro terminal:**
+   ```bash
+   json-server src/assets/data/users.json
+   ```
+
+5. **Acesse a aplicação:**
    Abra o navegador e vá para `http://localhost:4200/login`.
 
