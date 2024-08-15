@@ -1,27 +1,37 @@
-# ProjetoFinalFrontend
+# labPCP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+O **labPCP** é um software inovador desenvolvido para a gestão de processos educacionais, criado pela LAB365 Developer, uma empresa líder no segmento tecnológico de gestão estudantil. Este projeto visa solucionar a complexidade e a ineficiência na administração de processos educacionais em instituições de ensino.
 
-## Development server
+## Problema que Resolve
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Gerenciar processos educacionais pode ser uma tarefa desafiadora, envolvendo uma grande quantidade de dados, múltiplos usuários e uma constante necessidade de atualização e comunicação eficiente. O labPCP surge como uma solução para automatizar, organizar e simplificar essas tarefas, proporcionando uma experiência mais fluida e eficaz para gestores, professores e estudantes.
 
-## Code scaffolding
+## Técnicas e Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Este software será desenvolvido utilizando o **Angular**, um poderoso framework para a construção de interfaces de usuário dinâmicas e responsivas. O Angular foi escolhido por sua robustez, flexibilidade e por ser amplamente utilizado no desenvolvimento de aplicações Front-End de alta performance.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Como Executar
 
-## Running unit tests
+Para executar o projeto localmente, siga os passos abaixo:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/marcosvnDias/projeto-final-senai-frontend.git
+   cd labPCP
+   ```
 
-## Running end-to-end tests
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Execute o servidor de desenvolvimento:**
+   ```bash
+   ng serve
+   json-server src/assets/data/users.json
+   ```
 
-## Further help
+4. **Acesse a aplicação:**
+   Abra o navegador e vá para `http://localhost:4200/login`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
